@@ -1,4 +1,4 @@
 {% macro render(post,is_index,post_extra_class) %}
 
-    <div>{{ post.content }}</div>
+    <article class="article">{{ post.content }}</article>
 {% endmacro %}

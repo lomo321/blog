@@ -9,7 +9,7 @@
         <div id="content">{% block content%}{% endblock %}</div>
     </div>
 </div>
-
+    {% include './_partials/foot.swig' %}
 </body>
 
 </html>
