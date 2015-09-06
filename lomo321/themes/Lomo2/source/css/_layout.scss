@@ -1,0 +1,12 @@
+#container{
+  position: relative;
+  min-height: 100%;
+  background-color: #333333;
+  padding-left: 300px;
+  #main{
+    width: 100%;
+  }
+}
+@import "_partials/sideBar";
+@import "_partials/moblile-nav";
+@import "_mobile";
