@@ -1,12 +1,12 @@
 title: Hello World
 layout: page
 ---
-Welcome to Lomo‘s blog!
+Welcome to Lomo's blog!
 
-中文 显示 有 问题吗？
+中文显示
 
 ## This is my first article
-
+<!--more-->
 ### test code
 
 ``` bash
