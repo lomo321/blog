@@ -1,12 +1,12 @@
 title: Hello World
-layout: page
+layout: post
 ---
 Welcome to Lomo's blog!
 
 中文显示
 
 ## This is my first article
-<!--more-->
+
 ### test code
 
 ``` bash
@@ -14,7 +14,7 @@ $ hexo new "My New Post"
 ```
 
 More info: [Writing](http://hexo.io/docs/writing.html)
-
+<!--more-->
 ### test again
 
 ``` bash
