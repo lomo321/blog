@@ -12,6 +12,7 @@
     {% if is_index== true %}
         <div class="article-entry">{{ post.excerpt }}</div>
         <div class="article-more">
+            <div class="line"></div>
             <a class="link" href="{{ url_for(post.path) }}">more>></a>
         </div>
     {% else %}
