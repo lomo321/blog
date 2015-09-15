@@ -1,7 +1,13 @@
 @media screen and (max-width: 800px){
+  body {
+    min-width: 320px;
+  }
   #container {
     padding-left: 0;
 
+  }
+  #content {
+    padding: 10px;
   }
   #sideBar {
     display: none;

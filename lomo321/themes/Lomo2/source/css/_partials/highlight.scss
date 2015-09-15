@@ -14,34 +14,37 @@ $article-padding: 20px;
 $color-link: #258fb8;
 
 $color-border: #ddd;
-$color-background: #eee;
-$font-size: 14px;
+$color-background: #fff;
+$font-size: 16px;
 $line-height: 1.6em;
 
 .code-block {
   background: $highlight-background;
-    margin: 0 $article-padding * -1;
-  padding: 15px $article-padding;
+//    margin: 0 $article-padding * -1;
+  padding: 10px $article-padding;
   border-style: solid;
+  border-radius: 5px;
   border-color: $color-border;
   border-width: 1px 0;
   overflow: auto;
   color: $highlight-foreground;
   line-height: $font-size * 1.6;
+  margin-top: 20px;
 }
 
 .line-numbers {
-  color: #666;
+  color: #999;
   font-size: 0.85em;
 }
 
 .article-entry {
   pre, code {
     font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+    font-size: 16px;
   }
   code {
     background: $color-background;
-    text-shadow: 0 1px #fff;
+    text-shadow: 0 1px #ccc;
     padding: 0 0.3em;
   }
   pre {
@@ -80,7 +83,9 @@ $line-height: 1.6em;
     .gutter pre {
       @extend .line-numbers;
       text-align: right;
-      padding-right: 20px;
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: 1px solid #888;
     }
     .line {
       height: $font-size * 1.6;
@@ -140,55 +145,55 @@ pre {
   .title {
     color: $highlight-comment;
   }
-  .variable
-  .attribute
-  .tag
-  .regexp
-  .ruby .constant
-  .xml .tag .title
-  .xml .pi
-  .xml .doctype
-  .html .doctype
-  .css .id
-  .css .class
+  .variable,
+  .attribute,
+  .tag,
+  .regexp,
+  .ruby .constant,
+  .xml .tag .title,
+  .xml .pi,
+  .xml .doctype,
+  .html .doctype,
+  .css .id,
+  .css .class,
   .css .pseudo {
     color: $highlight-red
   }
-  .number
-  .preprocessor
-  .built_in
-  .literal
-  .params
+  .number,
+  .preprocessor,
+  .built_in,
+  .literal,
+  .params,
   .constant {
     color: $highlight-orange
   }
-  .class
-  .ruby .class .title
-  .css .rules .attribute {
+  .class,
+  .ruby .class .title,
+  .css .rules .attribute, {
     color: $highlight-green
   }
-  .string
-  .value
-  .inheritance
-  .header
-  .ruby .symbol
-  .xml .cdata {
+  .string,
+  .value,
+  .inheritance,
+  .header,
+  .ruby .symbol,
+  .xml .cdata, {
     color: $highlight-green
   }
   .css .hexcolor {
     color: $highlight-aqua
   }
-  .function
-  .python .decorator
-  .python .title
-  .ruby .function .title
-  .ruby .title .keyword
-  .perl .sub
-  .javascript .title
+  .function,
+  .python .decorator,
+  .python .title,
+  .ruby .function .title,
+  .ruby .title .keyword,
+  .perl .sub,
+  .javascript .title,
   .coffeescript .title {
     color: $highlight-blue
   }
-  .keyword
+  .keyword,
   .javascript .function {
     color: $highlight-purple
   }

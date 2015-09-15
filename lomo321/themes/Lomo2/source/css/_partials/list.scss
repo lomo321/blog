@@ -1,0 +1,40 @@
+.list-title {
+  display: block;
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
+  border-left: 2px solid #ddd;
+  &:hover {
+    border-left: 2px solid #aaa;
+
+  }
+  .title {
+    vertical-align: sub;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  .date {
+    display: inline-block;
+    color: #ccc;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .list-title {
+    padding: 20px 0px ;
+    margin-left: 0px;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+
+    .title {
+      position: absolute;
+      font-size: 16px;
+    }
+    .date {
+      display: inline-block;
+      color: #ccc;
+    }
+  }
+}

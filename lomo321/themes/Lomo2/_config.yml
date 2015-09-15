@@ -3,7 +3,7 @@ menu:
   home: /
   #categories: /categories
   #about: /about
-  archives: /archives
+  archives: /archives/
   tags: /tags
   #commonweal: /404.html
 
@@ -69,6 +69,7 @@ use_font_lato: true
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
+  duoshuo: lomo321
   ua_enable: true
   admin_enable: false
   user_id: 0

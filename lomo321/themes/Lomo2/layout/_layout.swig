@@ -2,6 +2,8 @@
 <html>
    {% include './_partials/head.swig' %}
 <body>
+<div id="background">
+</div>
 <div id="container">
     {% include './_partials/sideBar.swig' %}
     <div id="main">
