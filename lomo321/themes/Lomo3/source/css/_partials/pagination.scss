@@ -1,0 +1,42 @@
+#pagination {
+//  background: #f2f2f2;
+  ul{
+    text-align: right;
+    li{
+
+      margin: 5px;
+      display: inline-block;
+      a{
+//        border: 1px solid #452e11;
+        font-family: Cambria, Georgia, 'Microsoft Jhenghei', 'Hiragino Sans GB', 'Microsoft YaHei', 'Times New Roman', serif;
+        display: block;
+        background-color: #d9c9b8;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        color: #222;
+        font-size: 15px;
+        border-radius: 50%;
+        text-align: center;
+        transition: all 0.1s ease-in;
+      }
+      a:hover{
+        background-color: #915406;
+        color: #d9c9b8;
+      }
+      a.disabled{
+        background-color: #d9c9b8;
+        color: #222;
+
+      }
+      a.disabled:hover {
+        background-color: #d9c9b8;
+      }
+      a.current{
+        color: #d9c9b8;
+        background-color: #915406;
+      }
+    }
+  }
+
+}

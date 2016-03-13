@@ -32,6 +32,7 @@
                 //    sequence.push( {e: $('.menu-item')[i],p:{opacity:1},o:{duration:150}} );
                 //}
                 sequence.push({e:$('.menu'),p:{opacity:1},o:{duration:150, sequenceQueue:false}});
+                //sequence.push({e:$('#sideBar'),p:{opacity:0},o:{duration:150}});
                 $.Velocity.RunSequence(sequence);
             }
 

@@ -1,0 +1,25 @@
+@media screen and (max-width: 800px){
+  body {
+    min-width: 320px;
+  }
+  #container {
+    padding-left: 0;
+
+  }
+  #content {
+    padding: 0 5px;
+    width: 100%;
+  }
+  #sideBar {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+  }
+  #background {
+//    background: url("/img/bg2.jpg") center no-repeat #f2f2f2;
+//    background-size:cover;
+    background-color: #032d4a;
+
+  }
+}

@@ -64,7 +64,7 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 plugins: Hexo-renderer-sass
 ## Themes: http://hexo.io/themes/
-theme: Lomo2
+theme: Lomo3
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

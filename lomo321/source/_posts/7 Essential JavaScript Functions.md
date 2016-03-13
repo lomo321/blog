@@ -1,10 +1,13 @@
 title: 7 Essential JavaScript Functions
+date: 2015/09/13
+update: 2015/09/18
+tags: JS
 layout: post
 ---
 看到同事`天空男-斯盖勒`的博客中[《七个必备的js函数》](http://www.skylerzhang.com/js/2015/06/14/7-Essential-JavaScript-Functions/)这篇文章，满怀希望地点进去了。毫无意外地感到了失望，他只翻译了一个函数。作为好同事的我，决定把剩下的六个也翻译了。
 原文链接[《7 Essential JavaScript Functions》](http://davidwalsh.name/essential-javascript-functions)
-# debounce(去抖) #
-***
+
+## debounce(去抖) ##
 
 
 什么是`debounce`？
@@ -14,6 +17,7 @@ layout: post
 `debouce`函数是提升事件驱动性能方面的佼佼者。如果没有把去抖函数使用在`scroll`,`resize`,`key`等事件中，你的程序可能会出现错误。下面这个debounce函数 可以使你的代码更加高效：
 
 
+<!--more-->
 
 ```javascript
 function debounce(func, wait, immediate) {
@@ -36,15 +40,14 @@ var myEfficientFn = debounce(function() {
 window.addEventListener('resize', myEfficientFn);
 ```
 
-<!--more-->
 
 
 
 
 
-# throttle #
-***
-最后补充一个节流函数。在使用`mousemove`，`resize`或者`scroll`这类事件的时候，事件会不断地被触发，回调函数多次被执行。而`throttle`函数可以控制执行频率。这里给一个简单的实现方式（详细见[throttle与debounce](http://www.cnblogs.com/fsjohnhuang/p/4147810.html)）：
+## throttle ##
+
+补充一个节流函数。在使用`mousemove`，`resize`或者`scroll`这类事件的时候，事件会不断地被触发，回调函数多次被执行。而`throttle`函数可以控制执行频率。这里给一个简单的实现方式（详细见[throttle与debounce](http://www.cnblogs.com/fsjohnhuang/p/4147810.html)）：
 
 ```javascript
 var throttle = function(delay, action){
@@ -60,8 +63,8 @@ var throttle = function(delay, action){
 
 
 
-# poll #
-***
+## poll ##
+
 使用上文提到的去抖函数，有时候你并不能为你所需的某个状态触发一个回调（譬如你希望某个div元素宽度达到100px时触发一个回调），因为这个事件有可能不存在。这时你需要每隔一段时间就检测一次状态，看看是否满足条件触发回调。
 
 
@@ -103,8 +106,8 @@ poll(
 
 
 
-# once #
-***
+## once ##
+
 
 
 很多情况下，你希望函数只能执行一次，类似你使用`onload`事件的方式。以下的代码实现了这个功能。
@@ -137,8 +140,8 @@ canOnlyFireOnce(); // nada
 
 
 
-# getAbsoluteUrl #
-***
+## getAbsoluteUrl ##
+
 
 
 这是一个获取绝对地址的小技巧：
@@ -163,8 +166,8 @@ getAbsoluteUrl('/something'); // http://davidwalsh.name/something
 
 
 
-# isNative #
-***
+## isNative ##
+
 有时候你声明的函数名可能跟原生的函数名重复了，那如何才能知道一个函数是否为原生的。这段简单的代码可以给你答案：
 
 ```javascript
@@ -215,8 +218,8 @@ isNative(myCustomFunction); // false
 
 
 
-# insertRule #
-***
+## insertRule ##
+
 大家都知道我们可以从选择器中获取节点列表并且修改它们的样式，但我们有更高效的方法吗（像css一样）？
 
 ```javascript
@@ -243,8 +246,8 @@ sheet.insertRule("header { float: left; opacity: 0.8; }", 1);
 
 
 
-# matchesSelector #
-***
+## matchesSelector ##
+
 讲解这个函数之前先补充一点相关知识：matchesSelector用来匹配dom元素是否匹配某css selector。
 譬如
 
@@ -281,5 +284,5 @@ function matchesSelector(el, selector) {
 matchesSelector(document.getElementById('myDiv'), 'div.someSelector[some-attribute=true]')
 
 ```
-***
+
 

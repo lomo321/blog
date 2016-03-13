@@ -1,4 +1,6 @@
 title: Hello World
+date: 2015/09/10
+tags: 随笔
 layout: post
 ---
 
